@@ -1,0 +1,51 @@
+# Geotechnicalengineering — Winston-Salem
+
+> Geotechnical engineering services in Winston-Salem, United States.
+
+## Services
+- [Anchors](https://winston-salem.geotechnicalengineering.biz/anchors/)
+- [Atterberg Limits](https://winston-salem.geotechnicalengineering.biz/atterberg-limits/)
+- [Cbr Road](https://winston-salem.geotechnicalengineering.biz/cbr-road/)
+- [Cpt Test](https://winston-salem.geotechnicalengineering.biz/cpt-test/)
+- [Deep Excavations](https://winston-salem.geotechnicalengineering.biz/deep-excavations/)
+- [Excavation Monitoring](https://winston-salem.geotechnicalengineering.biz/excavation-monitoring/)
+- [Excavations](https://winston-salem.geotechnicalengineering.biz/excavations/)
+- [Flexible Pavement](https://winston-salem.geotechnicalengineering.biz/flexible-pavement/)
+- [Footings](https://winston-salem.geotechnicalengineering.biz/footings/)
+- [Foundations](https://winston-salem.geotechnicalengineering.biz/foundations/)
+- [Grain Size](https://winston-salem.geotechnicalengineering.biz/grain-size/)
+- [Ground Improvement](https://winston-salem.geotechnicalengineering.biz/ground-improvement/)
+- [Grouting](https://winston-salem.geotechnicalengineering.biz/grouting/)
+- [In Situ Permeability](https://winston-salem.geotechnicalengineering.biz/in-situ-permeability/)
+- [Investigation](https://winston-salem.geotechnicalengineering.biz/investigation/)
+- [Lab In Situ](https://winston-salem.geotechnicalengineering.biz/lab-in-situ/)
+- [Laboratory](https://winston-salem.geotechnicalengineering.biz/laboratory/)
+- [Liquefaction](https://winston-salem.geotechnicalengineering.biz/liquefaction/)
+- [Masw](https://winston-salem.geotechnicalengineering.biz/masw/)
+- [Mat Foundations](https://winston-salem.geotechnicalengineering.biz/mat-foundations/)
+- [Piles](https://winston-salem.geotechnicalengineering.biz/piles/)
+- [Proctor Tests](https://winston-salem.geotechnicalengineering.biz/proctor-tests/)
+- [Resistivity](https://winston-salem.geotechnicalengineering.biz/resistivity/)
+- [Retaining Walls](https://winston-salem.geotechnicalengineering.biz/retaining-walls/)
+- [Rigid Pavement](https://winston-salem.geotechnicalengineering.biz/rigid-pavement/)
+- [Road Geotechnics](https://winston-salem.geotechnicalengineering.biz/road-geotechnics/)
+- [Sand Cone Density](https://winston-salem.geotechnicalengineering.biz/sand-cone-density/)
+- [Seismic](https://winston-salem.geotechnicalengineering.biz/seismic/)
+- [Seismic Isolation](https://winston-salem.geotechnicalengineering.biz/seismic-isolation/)
+- [Seismic Microzonation](https://winston-salem.geotechnicalengineering.biz/seismic-microzonation/)
+- [Seismic Refraction](https://winston-salem.geotechnicalengineering.biz/seismic-refraction/)
+- [Slope Stability](https://winston-salem.geotechnicalengineering.biz/slope-stability/)
+- [Slopes](https://winston-salem.geotechnicalengineering.biz/slopes/)
+- [Soft Ground Tunnels](https://winston-salem.geotechnicalengineering.biz/soft-ground-tunnels/)
+- [Spt Drilling](https://winston-salem.geotechnicalengineering.biz/spt-drilling/)
+- [Stone Columns](https://winston-salem.geotechnicalengineering.biz/stone-columns/)
+- [Test Pits](https://winston-salem.geotechnicalengineering.biz/test-pits/)
+- [Triaxial](https://winston-salem.geotechnicalengineering.biz/triaxial/)
+- [Vibrocompaction](https://winston-salem.geotechnicalengineering.biz/vibrocompaction/)
+
+## Contact
+- Website: https://winston-salem.geotechnicalengineering.biz/
+
+## About
+This site provides geotechnical engineering services in Winston-Salem, United States.
+Compliant with local and international standards (ASTM, ISO, country-specific norms).
