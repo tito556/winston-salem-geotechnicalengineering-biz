@@ -13,7 +13,24 @@
 <meta name="robots" content="noindex,follow">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","name":"Privacy Policy","@id":"https://winston-salem.geotechnicalengineering.biz/privacy/","isPartOf":{"@id":"https://winston-salem.geotechnicalengineering.biz/#website","@type":"WebSite","url":"https://winston-salem.geotechnicalengineering.biz/"},"inLanguage":"en","url":"https://winston-salem.geotechnicalengineering.biz/privacy/"},{"itemListElement":[{"position":1,"item":"https://winston-salem.geotechnicalengineering.biz/","@type":"ListItem","name":"Home"},{"position":2,"item":"https://winston-salem.geotechnicalengineering.biz/privacy/","@type":"ListItem","name":"Privacy Policy"}],"@type":"BreadcrumbList"}]}</script>
 <style>a{color:#2d5a3d}body{max-width:800px;margin:2rem auto;padding:1rem;font-family:system-ui,sans-serif;line-height:1.7}h1{color:#1e3a5f}</style>
-<link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#581C87"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head><body>
+<link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#581C87"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><style id="minimal-fix-v5">
+/* Sticky para navbar específicos (NO header.hero) */
+.topbar, .navbar, .header-top, .main-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1010 !important;
+}
+header.hero, .hero { position: relative !important; }
+/* Dropdowns por encima del hero */
+.dd, .has-dd .dd, .nav-item .dd {
+  z-index: 1100 !important;
+}
+/* Leaflet contained */
+.leaflet-pane { z-index: 400 !important; }
+.leaflet-control { z-index: 800 !important; }
+.leaflet-container { z-index: 1 !important; }
+</style>
+</head><body>
 <p><a href="/">← Home</a></p>
 <h1>Privacy Policy</h1>
 <p>This site respects your privacy. We only collect information you voluntarily provide by contacting us via email. We do not use third-party tracking cookies nor share your information with external companies.</p><p>For any question about your data, contact us at the email on the site.</p>

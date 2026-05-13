@@ -48,15 +48,34 @@
     aside a{color:#fff;text-decoration:none;font-size:.85rem;opacity:.85}
     header nav a{color:#fff;text-decoration:none;margin-right:.5rem;font-size:.9rem;opacity:.9}
     header nav a:hover{opacity:1;text-decoration:underline}
-    .card ul{list-style:none;padding:0;margin:.5rem 0 0}</style>
-<link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#581C87"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
+    .card ul{list-style:none;padding:0;margin:.5rem 0 0}
+}
+</style>
+<link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#581C87"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><style id="minimal-fix-v5">
+/* Sticky para navbar específicos (NO header.hero) */
+.topbar, .navbar, .header-top, .main-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1010 !important;
+}
+header.hero, .hero { position: relative !important; }
+/* Dropdowns por encima del hero */
+.dd, .has-dd .dd, .nav-item .dd {
+  z-index: 1100 !important;
+}
+/* Leaflet contained */
+.leaflet-pane { z-index: 400 !important; }
+.leaflet-control { z-index: 800 !important; }
+.leaflet-container { z-index: 1 !important; }
+</style>
+</head>
 <body>
 <header>
   <div class="brand">Winston-Salem · Services</div>
   <nav><a href="/">Home</a> · <a href="/contact">Contact</a></nav>
 </header>
 <div class="wrap">
-  <aside><div class="cat"><div class="cat-name">Investigation</div><ul><li><a href="/spt-drilling">SPT Drilling</a></li><li><a href="/cpt-test">CPT Test</a></li><li><a href="/test-pits">Test Pits</a></li></ul></div><div class="cat"><div class="cat-name">In-Situ Lab</div><ul><li><a href="/proctor-tests">Proctor Tests</a></li><li><a href="/sand-cone-density">Sand Cone Density</a></li><li><a href="/in-situ-permeability">In-Situ Permeability</a></li></ul></div><div class="cat"><div class="cat-name">Laboratory</div><ul><li><a href="/grain-size">Grain Size Analysis</a></li><li><a href="/atterberg-limits">Atterberg Limits</a></li><li><a href="/triaxial">Triaxial Test</a></li></ul></div><div class="cat"><div class="cat-name">Geophysics</div><ul><li><a href="/masw">MASW</a></li><li><a href="/seismic-refraction">Seismic Refraction</a></li><li><a href="/resistivity">Resistivity</a></li></ul></div><div class="cat"><div class="cat-name">Foundations</div><ul><li><a href="/piles">Piles</a></li><li><a href="/footings">Footings</a></li><li><a href="/mat-foundations">Mat Foundations</a></li></ul></div><div class="cat"><div class="cat-name">Slopes</div><ul><li><a href="/slope-stability">Slope Stability</a></li><li><a href="/retaining-walls">Retaining Walls</a></li><li><a href="/anchors">Anchors</a></li></ul></div><div class="cat"><div class="cat-name">Ground Improvement</div><ul><li><a href="/grouting">Grouting</a></li><li><a href="/vibrocompaction">Vibrocompaction</a></li><li><a href="/stone-columns">Stone Columns</a></li></ul></div><div class="cat"><div class="cat-name">Excavations & Underground</div><ul><li><a href="/soft-ground-tunnels">Soft Ground Tunnels</a></li><li><a href="/deep-excavations">Deep Excavations</a></li><li><a href="/excavation-monitoring">Excavation Monitoring</a></li></ul></div><div class="cat"><div class="cat-name">Road Geotechnics</div><ul><li><a href="/flexible-pavement">Flexible Pavement</a></li><li><a href="/rigid-pavement">Rigid Pavement</a></li><li><a href="/cbr-road">CBR Road Study</a></li></ul></div><div class="cat"><div class="cat-name">Seismic</div><ul><li><a href="/liquefaction">Liquefaction</a></li><li><a href="/seismic-microzonation">Seismic Microzonation</a></li><li><a href="/seismic-isolation">Seismic Isolation</a></li></ul></div></aside>
+  <aside><div class="cat"><div class="cat-name">Investigation</div><ul><li><a href="/spt-drilling">SPT Drilling</a></li><li><a href="/cpt-test">CPT Test</a></li><li><a href="/test-pits">Test Pits</a></li></ul></div><div class="cat"><div class="cat-name">In-Situ Lab</div><ul><li><a href="/proctor-tests">Proctor Tests</a></li><li><a href="/sand-cone-density">Sand Cone Density</a></li><li><a href="/in-situ-permeability">In-Situ Permeability</a></li></ul></div><div class="cat"><div class="cat-name">Laboratory</div><ul><li><a href="/grain-size">Grain Size Analysis</a></li><li><a href="/atterberg-limits">Atterberg Limits</a></li><li><a href="/triaxial">Triaxial Test</a></li></ul></div><div class="cat"><div class="cat-name">Geophysics</div><ul><li><a href="/masw">MASW</a></li><li><a href="/seismic-refraction">Seismic Refraction</a></li><li><a href="/resistivity">Resistivity</a></li></ul></div><div class="cat"><div class="cat-name">Foundations</div><ul><li><a href="/piles">Piles</a></li><li><a href="/footings">Footings</a></li><li><a href="/mat-foundations">Mat Foundations</a></li></ul></div><div class="cat"><div class="cat-name">Slopes</div><ul><li><a href="/slope-stability">Slope Stability</a></li><li><a href="/retaining-walls">Retaining Walls</a></li><li><a href="/anchors">Anchors</a></li></ul></div><div class="cat"><div class="cat-name">Improvement</div><ul><li><a href="/grouting">Grouting</a></li><li><a href="/vibrocompaction">Vibrocompaction</a></li><li><a href="/stone-columns">Stone Columns</a></li></ul></div><div class="cat"><div class="cat-name">Excavations & Underground</div><ul><li><a href="/soft-ground-tunnels">Soft Ground Tunnels</a></li><li><a href="/deep-excavations">Deep Excavations</a></li><li><a href="/excavation-monitoring">Excavation Monitoring</a></li></ul></div><div class="cat"><div class="cat-name">Road Geotechnics</div><ul><li><a href="/flexible-pavement">Flexible Pavement</a></li><li><a href="/rigid-pavement">Rigid Pavement</a></li><li><a href="/cbr-road">CBR Road Study</a></li></ul></div><div class="cat"><div class="cat-name">Seismic</div><ul><li><a href="/liquefaction">Liquefaction</a></li><li><a href="/seismic-microzonation">Seismic Microzonation</a></li><li><a href="/seismic-isolation">Seismic Isolation</a></li></ul></div></aside>
   <main><h1>Contact us in Winston-Salem</h1><p class="intro">We reply to quote requests within 24 hours.</p><div class="contact-card"><p><strong>Email:</strong> <a href="mailto:contact@geotechnicalengineering.biz">contact@geotechnicalengineering.biz</a></p></div></main>
 </div>
 <footer><p>&copy; Winston-Salem · <a href="/contact">Contact</a> · <a href="/privacy">Privacy Policy</a></p><div data-authority-refs class="authority-refs" style="text-align:center;font-size:.8rem;padding:.5rem 0;opacity:.6"><strong>References:</strong> <a href="https://www.astm.org/products-services/standards-and-publications.html" rel="nofollow noopener" target="_blank">ASTM Standards</a> · <a href="https://www.publications.usace.army.mil/USACE-Publications/Engineer-Manuals/" rel="nofollow noopener" target="_blank">USACE Engineer Manuals</a> · <a href="https://www.iso.org/committee/49802.html" rel="nofollow noopener" target="_blank">ISO Geotechnical</a></div><div class="updated-info" data-updated="2026-03-08" style="text-align:center;font-size:.85rem;opacity:.7;padding:.5rem 0">Last updated: 2026-03-08</div></footer>
