@@ -92,6 +92,35 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#581C87) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
 </head><body>
 
 <header class="header">
@@ -160,9 +189,9 @@ header.hero, .hero { position: relative !important; }
         <h2>Quick answers</h2><details class="faq"><summary>How much does a soil mechanics study cost for a typical commercial lot in Winston-Salem?</summary><p>For a standard commercial lot — think one to two acres with a single-story building and parking — the soil mechanics study typically runs between US$3,250 and US$5,710. The spread depends on how many borings the site needs, whether we're pulling undisturbed Shelby tubes for consolidation and triaxial, and if the project requires deeper exploration for bedrock bearing. A site with thick undocumented fill or steep grades will push toward the upper end because we'll run more lab cycles to characterize the variability.</p></details><details class="faq"><summary>What makes Piedmont residual soils different from regular soil?</summary><p>The main difference is that Piedmont residual soils, and especially the saprolite we see across Winston-Salem, retain the texture and structural ghosts of the parent rock — typically felsic gneiss or schist — but the feldspars have weathered to clay and the mica is free and flaky. That gives you a material that looks competent in a split spoon but can collapse structurally when it gets saturated and loaded. The fines content sits in that tricky range where it drains poorly but isn't a true fat clay either, so you can't just apply textbook sand or clay assumptions.</p></details><details class="faq"><summary>How many borings do I need for a building permit in Forsyth County?</summary><p>Forsyth County doesn't publish a fixed number — it's performance-based under IBC Chapter 18. In practice, for a single commercial building under 10,000 square feet, we typically recommend three to four borings, spaced to catch any fill pockets or weathering profile changes. If the site has known cut-and-fill history or is adjacent to a creek, we'll add at least one boring on the downgradient side to check for perched water. The geotechnical report has to justify the exploration density based on the variability we document.</p></details><details class="faq"><summary>How long does the lab testing part of the study take?</summary><p>Once the samples arrive at the lab, classification tests — grain size, Atterberg limits, natural moisture — typically turn around in three to five business days. Consolidation and triaxial tests run longer, usually ten to fourteen business days, because we have to saturate the specimens, set up the load increments, and let primary consolidation complete at each step. If the project schedule is tight, we can issue a preliminary report with classification and index data while the strength and consolidation tests are still running.</p></details>
     <section class="block video-block" style="padding:2rem 1.5rem"><div style="max-width:720px;margin:0 auto"><h2 style="margin-bottom:1rem;font-weight:700;font-size:1.4rem">Explanatory video</h2><div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px"><iframe src="https://www.youtube.com/embed/V1m3cB-Aqy8" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none" loading="lazy" allowfullscreen></iframe></div></div></section></main>
 </div>
+<section class="block" style="padding:1.5rem"><div style="max-width:1200px;margin:0 auto"><p style="margin-top:0">This service complements our <a href="/laboratory/">laboratory testing</a> work for a complete project analysis.</p></div></section>
 
-
-    <section class="block map-block" style="padding:3rem 1.5rem">
+<section class="block map-block" style="padding:3rem 1.5rem">
       <div style="max-width:1200px;margin:0 auto">
         <h2 style="margin-bottom:.8rem;font-weight:700">Location and service area</h2>
         <p style="margin-bottom:1rem;color:#555">We serve projects across Winston-Salem and its metropolitan area.</p>
