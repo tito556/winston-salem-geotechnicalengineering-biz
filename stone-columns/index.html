@@ -360,6 +360,74 @@ main, .main-content, .content-area, .layout > *:not(aside):not(.sidebar) {
   padding-top: 0 !important;
 }
 </style>
+<style id="sidebar-overflow-fix-v1">
+/* Sidebar wider + items wrap properly */
+.sb-home, aside.sidebar, .sidebar, aside { width: 280px !important; }
+@media (max-width: 900px) {
+  .sb-home, aside.sidebar, .sidebar, aside { width: 100% !important; }
+}
+
+/* Cat name (main category) - wrap por palabras, NO por letras */
+.cat-name, .cat-row a:not(.cat-toggle), .nav-cat-link {
+  font-size: .9rem !important;
+  line-height: 1.25 !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+  display: inline-block !important;
+  max-width: calc(100% - 30px);
+}
+
+/* Sub-items dentro de dropdown (cat-sub) - font más chico + truncate múltiple */
+.cat-sub a, .cat-sub-wrap a, details[open] a, .nav-cat-sub a {
+  font-size: .78rem !important;
+  line-height: 1.2 !important;
+  padding: .35rem .6rem .35rem 1.5rem !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  display: block !important;
+  color: rgba(255,255,255,.85) !important;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.cat-sub a:hover, .cat-sub-wrap a:hover { background: rgba(255,255,255,.08); color: #FFFFFF !important; }
+
+/* Navbar items SIEMPRE visible — texto blanco */
+nav.navbar a, .nav-cat-link, nav a, .nav-bar a, .top-nav a,
+.nav-item, .nav-item a, .nav-item span {
+  color: #FFFFFF !important;
+  font-size: .95rem !important;
+  font-weight: 500;
+}
+nav.navbar a:hover, .nav-cat-link:hover { color: #FCD34D !important; }
+
+/* Si navbar tiene fondo claro: texto oscuro */
+nav.navbar[style*="background:#FFF"] a,
+nav.navbar[style*="background:#fff"] a,
+nav.navbar[style*="background:white"] a { color: #0F172A !important; }
+
+/* Cat-toggle arrow position absolute right */
+.cat-toggle, .cat-arrow, button.cat-toggle {
+  position: absolute !important;
+  right: .5rem !important;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent !important;
+  border: 0 !important;
+  color: #FFFFFF !important;
+  cursor: pointer;
+}
+.cat-row, .cat-item { position: relative !important; padding-right: 2rem !important; }
+
+/* Sidebar overflow-x hidden */
+.sb-home, aside.sidebar, .sidebar { overflow-x: hidden; }
+
+/* Container scroll bar styling */
+.sb-home::-webkit-scrollbar, aside.sidebar::-webkit-scrollbar { width: 4px; }
+.sb-home::-webkit-scrollbar-thumb, aside.sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,.2); border-radius: 2px; }
+</style>
 </head><body>
 
 <header class="header">
