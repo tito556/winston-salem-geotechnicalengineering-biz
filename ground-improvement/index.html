@@ -514,6 +514,72 @@ nav.navbar[style*="background:white"] a { color: #0F172A !important; }
 details:not([open]) .cat-sub { display: none !important; }
 details[open] .cat-sub { display: block !important; }
 </style>
+<style id="sidebar-definitive-fix-v4">
+/* cat-item NO debe ser flex (rompe cat-sub width) */
+.cat-item, details {
+  display: block !important;
+  position: relative !important;
+}
+/* cat-row interno SÍ flex para alinear name+toggle */
+.cat-row, details > summary, .nav-cat-row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: .5rem !important;
+  padding: .65rem .85rem !important;
+}
+/* cat-sub: ancho completo del padre (cat-item) */
+.cat-sub, .cat-sub-wrap, details[open] > div, .nav-cat-sub {
+  display: block !important;
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  flex: none !important;
+  flex-basis: auto !important;
+  position: static !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 0 .5rem !important;
+}
+/* Sub-item links */
+.cat-sub a, .cat-sub-wrap a, .nav-cat-sub a {
+  display: block !important;
+  width: 100% !important;
+  font-size: .82rem !important;
+  line-height: 1.25 !important;
+  padding: .35rem .75rem .35rem 1.5rem !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+  color: rgba(255,255,255,.82) !important;
+  text-decoration: none;
+  box-sizing: border-box !important;
+}
+.cat-sub a:hover { background: rgba(255,255,255,.08); color: #FFFFFF !important; }
+
+/* Cat-name flex:1 dentro de cat-row */
+.cat-row .cat-name, .cat-row > a:first-child, .nav-cat-link {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  white-space: normal !important;
+}
+
+/* Sidebar width fija desktop */
+aside, aside.sidebar, .sb-home, .sidebar {
+  width: 280px !important;
+  min-width: 280px !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+}
+@media (max-width: 900px) {
+  aside, aside.sidebar, .sb-home, .sidebar {
+    width: 100% !important; min-width: 0 !important;
+  }
+}
+</style>
 </head><body>
 
 <header class="header">
