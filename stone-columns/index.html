@@ -582,6 +582,30 @@ aside, aside.sidebar, .sb-home, .sidebar {
   }
 }
 </style>
+<style id="cat-name-visible-fix">
+/* FIX: Aberdeen sidebar cat-name invisible (white text on white bg)
+   sidebar-aggressive-fix-v3 set .cat-name{color:#FFFFFF !important} globally.
+   aside has background:#FFFFFF, so cat-name was invisible.
+   aside .cat-name is MORE SPECIFIC than .cat-name + has !important -> wins. */
+aside .cat-name {
+  color: #1F2937 !important;
+}
+aside .cat-row > a.cat-name, aside a.cat-name {
+  color: #1F2937 !important;
+  text-decoration: none !important;
+}
+aside .cat-name:hover, aside a.cat-name:hover {
+  color: #0F766E !important;
+  background: rgba(0,0,0,.04) !important;
+}
+/* Also fix cat-toggle arrow color to be visible on white bg */
+aside .cat-toggle {
+  color: #6B7280 !important;
+}
+aside .cat-toggle:hover {
+  color: #0F766E !important;
+}
+</style>
 </head><body>
 
 <header class="header">
