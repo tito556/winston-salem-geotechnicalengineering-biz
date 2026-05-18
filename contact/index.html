@@ -247,55 +247,19 @@ main, .main-content, .content-area, .layout > *:not(aside):not(.sidebar) {
   padding-top: 0 !important;
 }
 </style>
-<style id="collapse-final-v6">
-/* === SIDEBAR collapse: respetar JS, no forzar display:block === */
-.cat-sub, .cat-sub-wrap, .nav-cat-sub {
-  width: 100% !important;
-  min-width: 100% !important;
-  max-width: 100% !important;
-  flex: none !important;
-  position: static !important;
-  background: transparent !important;
-  box-shadow: none !important;
-}
-/* Sub-items legibles */
-.cat-sub a, .cat-sub-wrap a, .nav-cat-sub a {
+<style id="subwrap-fix-v8">
+/* cat-item: BLOCK (no flex) — children flow normal y cat-sub-wrap toma full width */
+.cat-item, details {
   display: block !important;
-  width: 100% !important;
-  font-size: .82rem !important;
-  line-height: 1.25 !important;
-  padding: .35rem .75rem .35rem 1.5rem !important;
-  white-space: normal !important;
-  word-break: normal !important;
-  overflow-wrap: break-word !important;
-  box-sizing: border-box !important;
-}
-
-/* === CARLSON: navbar horizontal arrows centrados === */
-.topbar .nav-item, .topnav .nav-item, nav.topbar > a, nav.topnav > a {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: .25rem !important;
   position: relative !important;
 }
-.topbar .nav-arrow, .topbar .cat-arrow, .topnav .nav-arrow, .topnav .cat-arrow,
-.nav-item > .arrow, .nav-item > svg, .nav-item > .triangle {
-  display: inline-flex !important;
-  align-items: center !important;
-  vertical-align: middle !important;
-  margin: 0 0 0 .15rem !important;
-  font-size: .7em !important;
-  line-height: 1 !important;
-  position: static !important;
-  transform: none !important;
-  top: auto !important;
-}
-
-/* === Cat-item flex correcto (cat-name + toggle arrow lado a lado) === */
-.cat-row, .cat-item > a:first-child, details > summary {
+/* cat-row interno: SI flex para alinear name + toggle */
+.cat-row {
   display: flex !important;
+  flex-wrap: nowrap !important;
   align-items: center !important;
   justify-content: space-between !important;
+  width: 100% !important;
 }
 .cat-name {
   flex: 1 1 auto !important;
@@ -303,9 +267,33 @@ main, .main-content, .content-area, .layout > *:not(aside):not(.sidebar) {
   word-break: normal !important;
   overflow-wrap: break-word !important;
   white-space: normal !important;
+  order: 1 !important;
 }
 .cat-toggle, .cat-arrow {
   flex-shrink: 0 !important;
+  order: 2 !important;
+}
+/* cat-sub-wrap: full width abajo */
+.cat-sub-wrap, .cat-sub, .nav-cat-sub {
+  flex-basis: 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  order: 3 !important;
+  position: static !important;
+  background: rgba(0,0,0,.15) !important;
+  padding: .4rem 0 .8rem !important;
+}
+/* Sub-item links */
+.cat-sub-wrap a, .cat-sub a, .nav-cat-sub a {
+  display: block !important;
+  width: 100% !important;
+  font-size: .82rem !important;
+  line-height: 1.25 !important;
+  padding: .35rem 1rem .35rem 1.8rem !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  box-sizing: border-box !important;
 }
 </style>
 </head>
